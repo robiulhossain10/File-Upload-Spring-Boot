@@ -20,7 +20,7 @@ import java.util.UUID;
 public class StorageService {
     private final FileDataRepository fileDataRepository;
 
-    private final String FOLDER_PATH = "H:\\SpringBoot\\FileUpload\\";
+    private final String FOLDER_PATH = "D:\\JAVA-65\\Spring\\FileUpload\\";
 
 
     public String uploadImageToFileSystem(MultipartFile file) throws IOException {
@@ -71,17 +71,43 @@ public byte[] downloadImageFromFileUplod(String fileName) throws IOException{
             if (Files.exists(path)) {
                 try {
                     byte[] image = Files.readAllBytes(path);
-                    infos.add(new FileInfo(fileData.getName(), fileData.getFilePath(), image));
+                    infos.add(new FileInfo(fileData.getId() ,fileData.getName(), fileData.getFilePath(), image));
                 } catch (IOException e) {
-                    // Log error but don't break the entire loop
                     System.err.println("Failed to read file: " + fileData.getFilePath() + " -> " + e.getMessage());
                 }
             } else {
-                // Log missing file instead of breaking everything
                 System.err.println("File not found: " + fileData.getFilePath());
             }
         }
 
         return infos;
     }
+
+    public void delete(Long id) {
+        FileData fileData = fileDataRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("File not found with id: " + id));
+
+        Path path = Path.of(fileData.getFilePath());
+
+        try {
+            if (Files.exists(path)) {
+                Files.delete(path);
+                System.out.println("🗑 File deleted from folder: " + path);
+            } else {
+                System.err.println("⚠️ File not found in folder: " + path);
+            }
+        } catch (IOException e) {
+            System.err.println("⚠️ Failed to delete file from folder: " + e.getMessage());
+            throw new RuntimeException("Failed to delete file from system: " + e.getMessage());
+        }
+        try {
+            fileDataRepository.deleteById(id);
+            System.out.println("✅ File record deleted from database: " + id);
+        } catch (Exception e) {
+            System.err.println("⚠️ Failed to delete database record: " + e.getMessage());
+            throw new RuntimeException("Failed to delete database record for file id " + id);
+        }
+    }
+
+
 }

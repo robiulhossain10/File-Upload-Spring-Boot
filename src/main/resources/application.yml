@@ -14,7 +14,24 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
-    show-sql: false
+    show-sql: true
     properties:
       hibernate:
         format_sql: true
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+logging:
+  level:
+    root: INFO
+    com.spring upload: DEBUG    # your base package
+  file:
+    name: logs/app.log
+  pattern:
+    console: "%d{HH:mm:ss} %-5level %logger{36} - %msg%n"
+
+
