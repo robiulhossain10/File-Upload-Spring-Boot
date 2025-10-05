@@ -1569,3 +1569,700 @@ java.lang.RuntimeException: File not found with id: 2
 2025-10-04T23:36:14.338+06:00  INFO 3548 --- [File-Upload] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2025-10-04T23:36:14.339+06:00  INFO 3548 --- [File-Upload] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2025-10-04T23:36:14.660+06:00  INFO 3548 --- [File-Upload] [http-nio-9091-exec-5] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 115 ms
+2025-10-05T08:58:25.996+06:00  INFO 1056 --- [File-Upload] [restartedMain] c.s.f.FileUploadSpringBootApplication    : Starting FileUploadSpringBootApplication using Java 17.0.7 with PID 1056 (H:\SpringBoot\File-Upload-Spring-Boot\target\classes started by A-3 in H:\SpringBoot\File-Upload-Spring-Boot)
+2025-10-05T08:58:25.999+06:00 DEBUG 1056 --- [File-Upload] [restartedMain] c.s.f.FileUploadSpringBootApplication    : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-05T08:58:26.000+06:00  INFO 1056 --- [File-Upload] [restartedMain] c.s.f.FileUploadSpringBootApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-10-05T08:58:26.056+06:00  INFO 1056 --- [File-Upload] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-05T08:58:26.056+06:00  INFO 1056 --- [File-Upload] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-05T08:58:27.213+06:00  INFO 1056 --- [File-Upload] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-05T08:58:27.272+06:00  INFO 1056 --- [File-Upload] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interface.
+2025-10-05T08:58:27.804+06:00  INFO 1056 --- [File-Upload] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2025-10-05T08:58:27.819+06:00  INFO 1056 --- [File-Upload] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-05T08:58:27.819+06:00  INFO 1056 --- [File-Upload] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-05T08:58:27.882+06:00  INFO 1056 --- [File-Upload] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-05T08:58:27.882+06:00  INFO 1056 --- [File-Upload] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1825 ms
+2025-10-05T08:58:28.064+06:00  INFO 1056 --- [File-Upload] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-05T08:58:28.154+06:00  INFO 1056 --- [File-Upload] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-05T08:58:28.202+06:00  INFO 1056 --- [File-Upload] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-05T08:58:28.551+06:00  INFO 1056 --- [File-Upload] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-05T08:58:28.588+06:00  INFO 1056 --- [File-Upload] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-05T08:58:28.780+06:00  INFO 1056 --- [File-Upload] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@51b6bb45
+2025-10-05T08:58:28.782+06:00  INFO 1056 --- [File-Upload] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-05T08:58:28.867+06:00  INFO 1056 --- [File-Upload] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-05T08:58:29.895+06:00  INFO 1056 --- [File-Upload] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-05T08:58:29.959+06:00  INFO 1056 --- [File-Upload] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-05T08:58:30.415+06:00  WARN 1056 --- [File-Upload] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-05T08:58:30.839+06:00  INFO 1056 --- [File-Upload] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-05T08:58:30.889+06:00  INFO 1056 --- [File-Upload] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path '/'
+2025-10-05T08:58:30.898+06:00  INFO 1056 --- [File-Upload] [restartedMain] c.s.f.FileUploadSpringBootApplication    : Started FileUploadSpringBootApplication in 5.726 seconds (process running for 7.295)
+2025-10-05T08:59:33.970+06:00  INFO 1056 --- [File-Upload] [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-05T08:59:33.971+06:00  INFO 1056 --- [File-Upload] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-05T08:59:33.974+06:00  INFO 1056 --- [File-Upload] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-05T08:59:34.126+06:00  INFO 1056 --- [File-Upload] [http-nio-9091-exec-1] c.s.f.controller.StorageController       : 📦 Fetching all uploaded files...
+2025-10-05T08:59:34.350+06:00  INFO 1056 --- [File-Upload] [http-nio-9091-exec-1] c.s.f.controller.StorageController       :  Total 1 files found.
+2025-10-05T08:59:45.888+06:00  INFO 1056 --- [File-Upload] [http-nio-9091-exec-3] c.s.f.controller.StorageController       : 📤 Upload request received for file: images.jpg
+2025-10-05T08:59:45.931+06:00 ERROR 1056 --- [File-Upload] [http-nio-9091-exec-3] c.s.f.controller.StorageController       : ❌ Failed to upload file 'images.jpg'. Error: java.io.FileNotFoundException: D:\JAVA-65\Spring\FileUpload\1af44c97-4bed-486e-a83c-aed290230e3d.jpg (The system cannot find the path specified)
+
+java.io.IOException: java.io.FileNotFoundException: D:\JAVA-65\Spring\FileUpload\1af44c97-4bed-486e-a83c-aed290230e3d.jpg (The system cannot find the path specified)
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:119) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile.transferTo(StandardMultipartHttpServletRequest.java:269) ~[spring-web-6.2.11.jar:6.2.11]
+	at com.springupload.fileuploadspringboot.service.StorageService.uploadImageToFileSystem(StorageService.java:46) ~[classes/:na]
+	at com.springupload.fileuploadspringboot.controller.StorageController.uploadImageToSystem(StorageController.java:38) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.46.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.46.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.io.FileNotFoundException: D:\JAVA-65\Spring\FileUpload\1af44c97-4bed-486e-a83c-aed290230e3d.jpg (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method) ~[na:na]
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293) ~[na:na]
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235) ~[na:na]
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184) ~[na:na]
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.write(DiskFileItem.java:551) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:117) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	... 53 common frames omitted
+
+2025-10-05T09:00:15.029+06:00  INFO 1056 --- [File-Upload] [http-nio-9091-exec-4] c.s.f.controller.StorageController       : 📤 Upload request received for file: photo-1526779259212-939e64788e3c.jpg
+2025-10-05T09:00:15.034+06:00 ERROR 1056 --- [File-Upload] [http-nio-9091-exec-4] c.s.f.controller.StorageController       : ❌ Failed to upload file 'photo-1526779259212-939e64788e3c.jpg'. Error: java.io.FileNotFoundException: D:\JAVA-65\Spring\FileUpload\a05dea66-01cd-419f-9ed8-f771610ba5b5.jpg (The system cannot find the path specified)
+
+java.io.IOException: java.io.FileNotFoundException: D:\JAVA-65\Spring\FileUpload\a05dea66-01cd-419f-9ed8-f771610ba5b5.jpg (The system cannot find the path specified)
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:119) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile.transferTo(StandardMultipartHttpServletRequest.java:269) ~[spring-web-6.2.11.jar:6.2.11]
+	at com.springupload.fileuploadspringboot.service.StorageService.uploadImageToFileSystem(StorageService.java:46) ~[classes/:na]
+	at com.springupload.fileuploadspringboot.controller.StorageController.uploadImageToSystem(StorageController.java:38) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.46.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.46.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.io.FileNotFoundException: D:\JAVA-65\Spring\FileUpload\a05dea66-01cd-419f-9ed8-f771610ba5b5.jpg (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method) ~[na:na]
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293) ~[na:na]
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235) ~[na:na]
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184) ~[na:na]
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.write(DiskFileItem.java:551) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:117) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	... 53 common frames omitted
+
+2025-10-05T09:02:17.681+06:00  INFO 1056 --- [File-Upload] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-05T09:02:17.730+06:00  INFO 1056 --- [File-Upload] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-05T09:02:17.734+06:00  INFO 1056 --- [File-Upload] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-05T09:02:17.736+06:00  INFO 1056 --- [File-Upload] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-05T09:02:17.740+06:00  INFO 1056 --- [File-Upload] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-05T09:02:20.303+06:00  INFO 16432 --- [File-Upload] [restartedMain] c.s.f.FileUploadSpringBootApplication    : Starting FileUploadSpringBootApplication using Java 17.0.7 with PID 16432 (H:\SpringBoot\File-Upload-Spring-Boot\target\classes started by A-3 in H:\SpringBoot\File-Upload-Spring-Boot)
+2025-10-05T09:02:20.306+06:00 DEBUG 16432 --- [File-Upload] [restartedMain] c.s.f.FileUploadSpringBootApplication    : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-05T09:02:20.307+06:00  INFO 16432 --- [File-Upload] [restartedMain] c.s.f.FileUploadSpringBootApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-10-05T09:02:20.356+06:00  INFO 16432 --- [File-Upload] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-05T09:02:20.356+06:00  INFO 16432 --- [File-Upload] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-05T09:02:21.171+06:00  INFO 16432 --- [File-Upload] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-05T09:02:21.218+06:00  INFO 16432 --- [File-Upload] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interface.
+2025-10-05T09:02:21.640+06:00  INFO 16432 --- [File-Upload] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2025-10-05T09:02:21.651+06:00  INFO 16432 --- [File-Upload] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-05T09:02:21.651+06:00  INFO 16432 --- [File-Upload] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-05T09:02:21.704+06:00  INFO 16432 --- [File-Upload] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-05T09:02:21.704+06:00  INFO 16432 --- [File-Upload] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1347 ms
+2025-10-05T09:02:21.835+06:00  INFO 16432 --- [File-Upload] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-05T09:02:21.907+06:00  INFO 16432 --- [File-Upload] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-05T09:02:21.941+06:00  INFO 16432 --- [File-Upload] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-05T09:02:22.225+06:00  INFO 16432 --- [File-Upload] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-05T09:02:22.258+06:00  INFO 16432 --- [File-Upload] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-05T09:02:22.465+06:00  INFO 16432 --- [File-Upload] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@11c1becf
+2025-10-05T09:02:22.467+06:00  INFO 16432 --- [File-Upload] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-05T09:02:22.528+06:00  INFO 16432 --- [File-Upload] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-05T09:02:23.373+06:00  INFO 16432 --- [File-Upload] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-05T09:02:23.432+06:00  INFO 16432 --- [File-Upload] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-05T09:02:23.801+06:00  WARN 16432 --- [File-Upload] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-05T09:02:24.167+06:00  INFO 16432 --- [File-Upload] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-05T09:02:24.203+06:00  INFO 16432 --- [File-Upload] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path '/'
+2025-10-05T09:02:24.213+06:00  INFO 16432 --- [File-Upload] [restartedMain] c.s.f.FileUploadSpringBootApplication    : Started FileUploadSpringBootApplication in 4.623 seconds (process running for 5.694)
+2025-10-05T09:02:51.749+06:00  INFO 16432 --- [File-Upload] [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-05T09:02:51.750+06:00  INFO 16432 --- [File-Upload] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-05T09:02:51.751+06:00  INFO 16432 --- [File-Upload] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-05T09:02:51.883+06:00 ERROR 16432 --- [File-Upload] [http-nio-9091-exec-2] c.s.f.controller.StorageController       : Failed to delete file with id 1: File not found with id: 1
+
+java.lang.RuntimeException: File not found with id: 1
+	at com.springupload.fileuploadspringboot.service.StorageService.lambda$delete$0(StorageService.java:88) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at com.springupload.fileuploadspringboot.service.StorageService.delete(StorageService.java:88) ~[classes/:na]
+	at com.springupload.fileuploadspringboot.controller.StorageController.deleteFile(StorageController.java:78) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596) ~[tomcat-embed-core-10.1.46.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.46.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2025-10-05T09:03:10.564+06:00  INFO 16432 --- [File-Upload] [http-nio-9091-exec-3] c.s.f.controller.StorageController       : 📦 Fetching all uploaded files...
+2025-10-05T09:03:10.714+06:00  INFO 16432 --- [File-Upload] [http-nio-9091-exec-3] c.s.f.controller.StorageController       :  Total 0 files found.
+2025-10-05T09:03:16.274+06:00  INFO 16432 --- [File-Upload] [http-nio-9091-exec-5] c.s.f.controller.StorageController       : 📤 Upload request received for file: photo-1526779259212-939e64788e3c.jpg
+2025-10-05T09:03:16.316+06:00 ERROR 16432 --- [File-Upload] [http-nio-9091-exec-5] c.s.f.controller.StorageController       : ❌ Failed to upload file 'photo-1526779259212-939e64788e3c.jpg'. Error: java.io.FileNotFoundException: D:\JAVA-65\Spring\FileUpload\028f3d6f-767b-495b-beb7-2f06e2eed2be.jpg (The system cannot find the path specified)
+
+java.io.IOException: java.io.FileNotFoundException: D:\JAVA-65\Spring\FileUpload\028f3d6f-767b-495b-beb7-2f06e2eed2be.jpg (The system cannot find the path specified)
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:119) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile.transferTo(StandardMultipartHttpServletRequest.java:269) ~[spring-web-6.2.11.jar:6.2.11]
+	at com.springupload.fileuploadspringboot.service.StorageService.uploadImageToFileSystem(StorageService.java:46) ~[classes/:na]
+	at com.springupload.fileuploadspringboot.controller.StorageController.uploadImageToSystem(StorageController.java:38) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.46.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.46.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.io.FileNotFoundException: D:\JAVA-65\Spring\FileUpload\028f3d6f-767b-495b-beb7-2f06e2eed2be.jpg (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method) ~[na:na]
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293) ~[na:na]
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235) ~[na:na]
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184) ~[na:na]
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.write(DiskFileItem.java:551) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:117) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	... 53 common frames omitted
+
+2025-10-05T09:03:18.517+06:00  INFO 16432 --- [File-Upload] [http-nio-9091-exec-6] c.s.f.controller.StorageController       : 📦 Fetching all uploaded files...
+2025-10-05T09:03:18.527+06:00  INFO 16432 --- [File-Upload] [http-nio-9091-exec-6] c.s.f.controller.StorageController       :  Total 0 files found.
+2025-10-05T09:03:19.366+06:00  INFO 16432 --- [File-Upload] [http-nio-9091-exec-7] c.s.f.controller.StorageController       : 📦 Fetching all uploaded files...
+2025-10-05T09:03:19.373+06:00  INFO 16432 --- [File-Upload] [http-nio-9091-exec-7] c.s.f.controller.StorageController       :  Total 0 files found.
+2025-10-05T09:03:24.520+06:00  INFO 16432 --- [File-Upload] [http-nio-9091-exec-8] c.s.f.controller.StorageController       : 📤 Upload request received for file: images.jpg
+2025-10-05T09:03:24.528+06:00 ERROR 16432 --- [File-Upload] [http-nio-9091-exec-8] c.s.f.controller.StorageController       : ❌ Failed to upload file 'images.jpg'. Error: java.io.FileNotFoundException: D:\JAVA-65\Spring\FileUpload\24346769-1793-440d-bf4d-f07ae3803963.jpg (The system cannot find the path specified)
+
+java.io.IOException: java.io.FileNotFoundException: D:\JAVA-65\Spring\FileUpload\24346769-1793-440d-bf4d-f07ae3803963.jpg (The system cannot find the path specified)
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:119) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile.transferTo(StandardMultipartHttpServletRequest.java:269) ~[spring-web-6.2.11.jar:6.2.11]
+	at com.springupload.fileuploadspringboot.service.StorageService.uploadImageToFileSystem(StorageService.java:46) ~[classes/:na]
+	at com.springupload.fileuploadspringboot.controller.StorageController.uploadImageToSystem(StorageController.java:38) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.46.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.46.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.io.FileNotFoundException: D:\JAVA-65\Spring\FileUpload\24346769-1793-440d-bf4d-f07ae3803963.jpg (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method) ~[na:na]
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293) ~[na:na]
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235) ~[na:na]
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184) ~[na:na]
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.write(DiskFileItem.java:551) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:117) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	... 53 common frames omitted
+
+2025-10-05T09:03:29.481+06:00  INFO 16432 --- [File-Upload] [http-nio-9091-exec-9] c.s.f.controller.StorageController       : 📦 Fetching all uploaded files...
+2025-10-05T09:03:29.490+06:00  INFO 16432 --- [File-Upload] [http-nio-9091-exec-9] c.s.f.controller.StorageController       :  Total 0 files found.
+2025-10-05T09:03:44.889+06:00  INFO 16432 --- [File-Upload] [http-nio-9091-exec-10] c.s.f.controller.StorageController       : 📤 Upload request received for file: images.jpg
+2025-10-05T09:03:44.894+06:00 ERROR 16432 --- [File-Upload] [http-nio-9091-exec-10] c.s.f.controller.StorageController       : ❌ Failed to upload file 'images.jpg'. Error: java.io.FileNotFoundException: D:\JAVA-65\Spring\FileUpload\5a44b2ea-c765-40e1-a587-762d6798e5cb.jpg (The system cannot find the path specified)
+
+java.io.IOException: java.io.FileNotFoundException: D:\JAVA-65\Spring\FileUpload\5a44b2ea-c765-40e1-a587-762d6798e5cb.jpg (The system cannot find the path specified)
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:119) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile.transferTo(StandardMultipartHttpServletRequest.java:269) ~[spring-web-6.2.11.jar:6.2.11]
+	at com.springupload.fileuploadspringboot.service.StorageService.uploadImageToFileSystem(StorageService.java:46) ~[classes/:na]
+	at com.springupload.fileuploadspringboot.controller.StorageController.uploadImageToSystem(StorageController.java:38) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.46.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.46.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.io.FileNotFoundException: D:\JAVA-65\Spring\FileUpload\5a44b2ea-c765-40e1-a587-762d6798e5cb.jpg (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method) ~[na:na]
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293) ~[na:na]
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235) ~[na:na]
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184) ~[na:na]
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.write(DiskFileItem.java:551) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:117) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	... 53 common frames omitted
+
+2025-10-05T09:03:47.557+06:00  INFO 16432 --- [File-Upload] [http-nio-9091-exec-1] c.s.f.controller.StorageController       : 📦 Fetching all uploaded files...
+2025-10-05T09:03:47.561+06:00  INFO 16432 --- [File-Upload] [http-nio-9091-exec-1] c.s.f.controller.StorageController       :  Total 0 files found.
+2025-10-05T09:04:57.371+06:00  INFO 16432 --- [File-Upload] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-05T09:04:57.431+06:00  INFO 16432 --- [File-Upload] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-05T09:04:57.436+06:00  INFO 16432 --- [File-Upload] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-05T09:04:57.438+06:00  INFO 16432 --- [File-Upload] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-05T09:04:57.443+06:00  INFO 16432 --- [File-Upload] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-05T09:05:02.032+06:00  INFO 15688 --- [File-Upload] [restartedMain] c.s.f.FileUploadSpringBootApplication    : Starting FileUploadSpringBootApplication using Java 17.0.7 with PID 15688 (H:\SpringBoot\File-Upload-Spring-Boot\target\classes started by A-3 in H:\SpringBoot\File-Upload-Spring-Boot)
+2025-10-05T09:05:02.034+06:00 DEBUG 15688 --- [File-Upload] [restartedMain] c.s.f.FileUploadSpringBootApplication    : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-05T09:05:02.035+06:00  INFO 15688 --- [File-Upload] [restartedMain] c.s.f.FileUploadSpringBootApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-10-05T09:05:02.077+06:00  INFO 15688 --- [File-Upload] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-05T09:05:02.077+06:00  INFO 15688 --- [File-Upload] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-05T09:05:02.793+06:00  INFO 15688 --- [File-Upload] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-05T09:05:02.843+06:00  INFO 15688 --- [File-Upload] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
+2025-10-05T09:05:03.263+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2025-10-05T09:05:03.274+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-05T09:05:03.274+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-05T09:05:03.315+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-05T09:05:03.316+06:00  INFO 15688 --- [File-Upload] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1238 ms
+2025-10-05T09:05:03.445+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-05T09:05:03.498+06:00  INFO 15688 --- [File-Upload] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-05T09:05:03.535+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-05T09:05:03.781+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-05T09:05:03.809+06:00  INFO 15688 --- [File-Upload] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-05T09:05:03.950+06:00  INFO 15688 --- [File-Upload] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@478cd432
+2025-10-05T09:05:03.952+06:00  INFO 15688 --- [File-Upload] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-05T09:05:04.018+06:00  INFO 15688 --- [File-Upload] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-05T09:05:04.810+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-05T09:05:04.859+06:00  INFO 15688 --- [File-Upload] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-05T09:05:05.199+06:00  WARN 15688 --- [File-Upload] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-05T09:05:05.580+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-05T09:05:05.619+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path '/'
+2025-10-05T09:05:05.628+06:00  INFO 15688 --- [File-Upload] [restartedMain] c.s.f.FileUploadSpringBootApplication    : Started FileUploadSpringBootApplication in 4.145 seconds (process running for 5.148)
+2025-10-05T09:05:13.240+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-05T09:05:13.241+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-05T09:05:13.243+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-05T09:05:13.315+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-1] c.s.f.controller.StorageController       : 📤 Upload request received for file: images.jpg
+2025-10-05T09:05:13.389+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-1] c.s.f.controller.StorageController       : ✅ File 'images.jpg' uploaded successfully!
+2025-10-05T09:05:15.622+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-2] c.s.f.controller.StorageController       : 📦 Fetching all uploaded files...
+2025-10-05T09:05:15.735+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-2] c.s.f.controller.StorageController       :  Total 1 files found.
+2025-10-05T09:05:19.878+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-3] c.s.f.controller.StorageController       : 📤 Upload request received for file: photo-1526779259212-939e64788e3c.jpg
+2025-10-05T09:05:19.884+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-3] c.s.f.controller.StorageController       : ✅ File 'photo-1526779259212-939e64788e3c.jpg' uploaded successfully!
+2025-10-05T09:05:20.974+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-4] c.s.f.controller.StorageController       : 📦 Fetching all uploaded files...
+2025-10-05T09:05:20.988+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-4] c.s.f.controller.StorageController       :  Total 2 files found.
+2025-10-05T09:24:54.350+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-8] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 132 ms
+2025-10-05T09:25:20.362+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-9] c.s.f.controller.StorageController       : 📦 Fetching all uploaded files...
+2025-10-05T09:25:20.369+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-9] c.s.f.controller.StorageController       :  Total 2 files found.
+2025-10-05T09:26:23.290+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-2] c.s.f.controller.StorageController       : 📦 Fetching all uploaded files...
+2025-10-05T09:26:23.299+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-2] c.s.f.controller.StorageController       :  Total 2 files found.
+2025-10-05T09:27:53.727+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-9] c.s.f.controller.StorageController       : 📦 Fetching all uploaded files...
+2025-10-05T09:27:53.733+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-9] c.s.f.controller.StorageController       :  Total 2 files found.
+2025-10-05T09:27:59.885+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-1] c.s.f.controller.StorageController       : 📦 Fetching all uploaded files...
+2025-10-05T09:27:59.894+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-1] c.s.f.controller.StorageController       :  Total 2 files found.
+2025-10-05T09:44:59.388+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-3] c.s.f.controller.StorageController       : 📦 Fetching all uploaded files...
+2025-10-05T09:44:59.397+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-3] c.s.f.controller.StorageController       :  Total 2 files found.
+2025-10-05T10:03:00.994+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-7] c.s.f.controller.StorageController       : 📦 Fetching all uploaded files...
+2025-10-05T10:03:01.015+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-7] c.s.f.controller.StorageController       :  Total 2 files found.
+2025-10-05T10:03:16.891+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-8] c.s.f.controller.StorageController       : 📦 Fetching all uploaded files...
+2025-10-05T10:03:16.899+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-8] c.s.f.controller.StorageController       :  Total 2 files found.
+2025-10-05T10:04:08.888+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-9] c.s.f.controller.StorageController       : 📦 Fetching all uploaded files...
+2025-10-05T10:04:08.896+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-9] c.s.f.controller.StorageController       :  Total 2 files found.
+2025-10-05T10:06:12.267+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-10] c.s.f.controller.StorageController       : 📦 Fetching all uploaded files...
+2025-10-05T10:06:12.274+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-10] c.s.f.controller.StorageController       :  Total 2 files found.
+2025-10-05T10:26:53.587+06:00  INFO 15688 --- [File-Upload] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-10-05T10:26:53.607+06:00  INFO 15688 --- [File-Upload] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-05T10:26:53.720+06:00  INFO 15688 --- [File-Upload] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-05T10:26:53.727+06:00  INFO 15688 --- [File-Upload] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-05T10:26:53.733+06:00  INFO 15688 --- [File-Upload] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-05T10:26:53.742+06:00  INFO 15688 --- [File-Upload] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-05T10:26:53.849+06:00  INFO 15688 --- [File-Upload] [restartedMain] c.s.f.FileUploadSpringBootApplication    : Starting FileUploadSpringBootApplication using Java 17.0.7 with PID 15688 (H:\SpringBoot\File-Upload-Spring-Boot\target\classes started by A-3 in H:\SpringBoot\File-Upload-Spring-Boot)
+2025-10-05T10:26:53.849+06:00 DEBUG 15688 --- [File-Upload] [restartedMain] c.s.f.FileUploadSpringBootApplication    : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-05T10:26:53.849+06:00  INFO 15688 --- [File-Upload] [restartedMain] c.s.f.FileUploadSpringBootApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-10-05T10:26:54.182+06:00  INFO 15688 --- [File-Upload] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-05T10:26:54.191+06:00  INFO 15688 --- [File-Upload] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2025-10-05T10:26:54.294+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2025-10-05T10:26:54.295+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-05T10:26:54.295+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-05T10:26:54.311+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-05T10:26:54.312+06:00  INFO 15688 --- [File-Upload] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 460 ms
+2025-10-05T10:26:54.345+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-05T10:26:54.348+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-05T10:26:54.358+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-05T10:26:54.359+06:00  INFO 15688 --- [File-Upload] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-10-05T10:26:54.404+06:00  INFO 15688 --- [File-Upload] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@259149e
+2025-10-05T10:26:54.405+06:00  INFO 15688 --- [File-Upload] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-10-05T10:26:54.413+06:00  INFO 15688 --- [File-Upload] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-05T10:26:54.470+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-05T10:26:54.487+06:00  INFO 15688 --- [File-Upload] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-05T10:26:54.564+06:00  WARN 15688 --- [File-Upload] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-05T10:26:54.704+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-05T10:26:54.719+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path '/'
+2025-10-05T10:26:54.724+06:00  INFO 15688 --- [File-Upload] [restartedMain] c.s.f.FileUploadSpringBootApplication    : Started FileUploadSpringBootApplication in 0.906 seconds (process running for 4914.245)
+2025-10-05T10:26:54.727+06:00  INFO 15688 --- [File-Upload] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-05T10:26:56.184+06:00  INFO 15688 --- [File-Upload] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-10-05T10:26:56.185+06:00  INFO 15688 --- [File-Upload] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-05T10:26:56.493+06:00  INFO 15688 --- [File-Upload] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-05T10:26:56.494+06:00  INFO 15688 --- [File-Upload] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-05T10:26:56.495+06:00  INFO 15688 --- [File-Upload] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-10-05T10:26:56.500+06:00  INFO 15688 --- [File-Upload] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-10-05T10:26:56.635+06:00  INFO 15688 --- [File-Upload] [restartedMain] c.s.f.FileUploadSpringBootApplication    : Starting FileUploadSpringBootApplication using Java 17.0.7 with PID 15688 (H:\SpringBoot\File-Upload-Spring-Boot\target\classes started by A-3 in H:\SpringBoot\File-Upload-Spring-Boot)
+2025-10-05T10:26:56.635+06:00 DEBUG 15688 --- [File-Upload] [restartedMain] c.s.f.FileUploadSpringBootApplication    : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-05T10:26:56.635+06:00  INFO 15688 --- [File-Upload] [restartedMain] c.s.f.FileUploadSpringBootApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-10-05T10:26:56.867+06:00  INFO 15688 --- [File-Upload] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-05T10:26:56.878+06:00  INFO 15688 --- [File-Upload] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2025-10-05T10:26:56.971+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2025-10-05T10:26:56.972+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-05T10:26:56.976+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-05T10:26:57.015+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-05T10:26:57.015+06:00  INFO 15688 --- [File-Upload] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 376 ms
+2025-10-05T10:26:57.049+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-05T10:26:57.051+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-05T10:26:57.061+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-05T10:26:57.061+06:00  INFO 15688 --- [File-Upload] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-10-05T10:26:57.101+06:00  INFO 15688 --- [File-Upload] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@2e678512
+2025-10-05T10:26:57.101+06:00  INFO 15688 --- [File-Upload] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-10-05T10:26:57.107+06:00  INFO 15688 --- [File-Upload] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-05T10:26:57.155+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-05T10:26:57.172+06:00  INFO 15688 --- [File-Upload] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-05T10:26:57.235+06:00  WARN 15688 --- [File-Upload] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-05T10:26:57.325+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-05T10:26:57.336+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path '/'
+2025-10-05T10:26:57.340+06:00  INFO 15688 --- [File-Upload] [restartedMain] c.s.f.FileUploadSpringBootApplication    : Started FileUploadSpringBootApplication in 0.746 seconds (process running for 4916.861)
+2025-10-05T10:26:57.342+06:00  INFO 15688 --- [File-Upload] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-05T10:48:29.056+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-05T10:48:29.057+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-05T10:48:29.057+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-10-05T10:48:29.059+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-1] c.s.f.controller.StorageController       : 📦 Fetching all uploaded files...
+2025-10-05T10:48:29.073+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-1] c.s.f.controller.StorageController       :  Total 2 files found.
+2025-10-05T11:40:17.952+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-4] c.s.f.controller.StorageController       : 📦 Fetching all uploaded files...
+2025-10-05T11:40:17.960+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-4] c.s.f.controller.StorageController       :  Total 2 files found.
+2025-10-05T11:40:43.659+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-7] c.s.f.controller.StorageController       : 📦 Fetching all uploaded files...
+2025-10-05T11:40:43.664+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-7] c.s.f.controller.StorageController       :  Total 1 files found.
+2025-10-05T11:40:46.069+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-10] c.s.f.controller.StorageController       : 📦 Fetching all uploaded files...
+2025-10-05T11:40:46.072+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-10] c.s.f.controller.StorageController       :  Total 0 files found.
+2025-10-05T11:40:51.244+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-3] c.s.f.controller.StorageController       : 📤 Upload request received for file: images.jpg
+2025-10-05T11:40:51.252+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-3] c.s.f.controller.StorageController       : ✅ File 'images.jpg' uploaded successfully!
+2025-10-05T11:40:52.399+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-2] c.s.f.controller.StorageController       : 📦 Fetching all uploaded files...
+2025-10-05T11:40:52.406+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-2] c.s.f.controller.StorageController       :  Total 1 files found.
+2025-10-05T11:42:21.910+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-5] c.s.f.controller.StorageController       : 📦 Fetching all uploaded files...
+2025-10-05T11:42:21.920+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-5] c.s.f.controller.StorageController       :  Total 1 files found.
+2025-10-05T11:43:26.570+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-7] c.s.f.controller.StorageController       : 📦 Fetching all uploaded files...
+2025-10-05T11:43:26.581+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-7] c.s.f.controller.StorageController       :  Total 1 files found.
+2025-10-05T11:46:22.623+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-9] c.s.f.controller.StorageController       : 📦 Fetching all uploaded files...
+2025-10-05T11:46:22.631+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-9] c.s.f.controller.StorageController       :  Total 1 files found.
+2025-10-05T11:46:28.285+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-3] c.s.f.controller.StorageController       : 📦 Fetching all uploaded files...
+2025-10-05T11:46:28.287+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-3] c.s.f.controller.StorageController       :  Total 0 files found.
+2025-10-05T11:46:33.960+06:00  WARN 15688 --- [File-Upload] [http-nio-9091-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'image' is not present.]
+2025-10-05T11:48:05.985+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-4] c.s.f.controller.StorageController       : 📦 Fetching all uploaded files...
+2025-10-05T11:48:05.996+06:00  INFO 15688 --- [File-Upload] [http-nio-9091-exec-4] c.s.f.controller.StorageController       :  Total 0 files found.
+2025-10-05T11:48:10.956+06:00  WARN 15688 --- [File-Upload] [http-nio-9091-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'image' is not present.]
+2025-10-05T11:48:14.189+06:00  WARN 15688 --- [File-Upload] [http-nio-9091-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'image' is not present.]
+2025-10-05T12:08:48.230+06:00  WARN 15688 --- [File-Upload] [http-nio-9091-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'image' is not present.]
+2025-10-05T12:08:54.222+06:00  WARN 15688 --- [File-Upload] [http-nio-9091-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'image' is not present.]
+2025-10-05T12:10:22.600+06:00  WARN 15688 --- [File-Upload] [http-nio-9091-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'image' is not present.]
+2025-10-05T12:12:37.510+06:00  INFO 15688 --- [File-Upload] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-10-05T12:12:37.512+06:00  INFO 15688 --- [File-Upload] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-05T12:12:37.564+06:00  INFO 15688 --- [File-Upload] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-05T12:12:37.567+06:00  INFO 15688 --- [File-Upload] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-05T12:12:37.568+06:00  INFO 15688 --- [File-Upload] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-10-05T12:12:37.569+06:00  INFO 15688 --- [File-Upload] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-10-05T12:12:37.653+06:00  INFO 15688 --- [File-Upload] [restartedMain] c.s.f.FileUploadSpringBootApplication    : Starting FileUploadSpringBootApplication using Java 17.0.7 with PID 15688 (H:\SpringBoot\File-Upload-Spring-Boot\target\classes started by A-3 in H:\SpringBoot\File-Upload-Spring-Boot)
+2025-10-05T12:12:37.653+06:00 DEBUG 15688 --- [File-Upload] [restartedMain] c.s.f.FileUploadSpringBootApplication    : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-05T12:12:37.654+06:00  INFO 15688 --- [File-Upload] [restartedMain] c.s.f.FileUploadSpringBootApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-10-05T12:12:37.880+06:00  INFO 15688 --- [File-Upload] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-05T12:12:37.887+06:00  INFO 15688 --- [File-Upload] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2025-10-05T12:12:37.967+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2025-10-05T12:12:37.968+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-05T12:12:37.968+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-05T12:12:37.983+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-05T12:12:37.983+06:00  INFO 15688 --- [File-Upload] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 327 ms
+2025-10-05T12:12:38.014+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-05T12:12:38.021+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-05T12:12:38.030+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-05T12:12:38.031+06:00  INFO 15688 --- [File-Upload] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-10-05T12:12:38.072+06:00  INFO 15688 --- [File-Upload] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@10c9c0ad
+2025-10-05T12:12:38.073+06:00  INFO 15688 --- [File-Upload] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-10-05T12:12:38.080+06:00  INFO 15688 --- [File-Upload] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-05T12:12:38.129+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-05T12:12:38.147+06:00  INFO 15688 --- [File-Upload] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-05T12:12:38.212+06:00  WARN 15688 --- [File-Upload] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-05T12:12:38.310+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-05T12:12:38.322+06:00  INFO 15688 --- [File-Upload] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path '/'
+2025-10-05T12:12:38.328+06:00  INFO 15688 --- [File-Upload] [restartedMain] c.s.f.FileUploadSpringBootApplication    : Started FileUploadSpringBootApplication in 0.704 seconds (process running for 11257.848)
+2025-10-05T12:12:38.329+06:00  INFO 15688 --- [File-Upload] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-05T12:13:29.746+06:00  INFO 15688 --- [File-Upload] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-05T12:13:29.844+06:00  INFO 15688 --- [File-Upload] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-05T12:13:29.847+06:00  INFO 15688 --- [File-Upload] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-05T12:13:29.847+06:00  INFO 15688 --- [File-Upload] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2025-10-05T12:13:29.848+06:00  INFO 15688 --- [File-Upload] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.

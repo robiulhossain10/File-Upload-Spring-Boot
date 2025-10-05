@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import static org.springframework.data.jpa.domain.AbstractPersistable_.id;
@@ -31,22 +32,34 @@ public class StorageController {
             value = "/fileupload",
             consumes = MediaType.MULTIPART_FORM_DATA_VALUE
     )
-    public ResponseEntity<?> uploadImageToSystem(@RequestParam("image") MultipartFile file) throws IOException {
-        logger.info("📤 Upload request received for file: {}", file.getOriginalFilename());
+    public ResponseEntity<?> uploadImagesToSystem(@RequestParam("images") List<MultipartFile> files) {
+        logger.info("📤 Received {} file(s) for upload.", files.size());
+
+        if (files.isEmpty()) {
+            logger.warn("⚠️ No files received for upload.");
+            return ResponseEntity.badRequest().body(new ResponseMessage("No files uploaded."));
+        }
+
+        List<String> uploadedFiles = new ArrayList<>();
 
         try {
-            String uploadImage = storageService.uploadImageToFileSystem(file);
-            String message = "Uploaded the file successfully: " + file.getOriginalFilename();
+            for (MultipartFile file : files) {
+                logger.info("➡ Uploading file: {}", file.getOriginalFilename());
+                String uploadedPath = storageService.uploadImageToFileSystem(file);
+                uploadedFiles.add(file.getOriginalFilename());
+                logger.info("✅ File '{}' uploaded successfully!", file.getOriginalFilename());
+            }
 
-            logger.info("✅ File '{}' uploaded successfully!", file.getOriginalFilename());
-            return ResponseEntity.status(HttpStatus.OK).body(new ResponseMessage(message));
+            String message = "Uploaded " + uploadedFiles.size() + " file(s) successfully: " + uploadedFiles;
+            return ResponseEntity.ok(new ResponseMessage(message));
 
         } catch (Exception e) {
-            logger.error("❌ Failed to upload file '{}'. Error: {}", file.getOriginalFilename(), e.getMessage(), e);
-            String message = "Could not upload the file: " + file.getOriginalFilename();
-            return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body(new ResponseMessage(message));
+            logger.error("❌ Failed to upload files. Error: {}", e.getMessage(), e);
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body(new ResponseMessage("Could not upload files. Please check file path or permissions."));
         }
     }
+
 
 
     @GetMapping("/{fileName}")

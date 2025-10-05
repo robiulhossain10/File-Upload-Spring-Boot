@@ -20,7 +20,7 @@ import java.util.UUID;
 public class StorageService {
     private final FileDataRepository fileDataRepository;
 
-    private final String FOLDER_PATH = "D:\\JAVA-65\\Spring\\FileUpload\\";
+    private final String FOLDER_PATH = "H:\\SpringBoot\\FileUpload\\";
 
 
     public String uploadImageToFileSystem(MultipartFile file) throws IOException {
@@ -92,19 +92,19 @@ public byte[] downloadImageFromFileUplod(String fileName) throws IOException{
         try {
             if (Files.exists(path)) {
                 Files.delete(path);
-                System.out.println("🗑 File deleted from folder: " + path);
+                System.out.println("File deleted from folder: " + path);
             } else {
-                System.err.println("⚠️ File not found in folder: " + path);
+                System.err.println("⚠File not found in folder: " + path);
             }
         } catch (IOException e) {
-            System.err.println("⚠️ Failed to delete file from folder: " + e.getMessage());
+            System.err.println("⚠Failed to delete file from folder: " + e.getMessage());
             throw new RuntimeException("Failed to delete file from system: " + e.getMessage());
         }
         try {
             fileDataRepository.deleteById(id);
-            System.out.println("✅ File record deleted from database: " + id);
+            System.out.println("File record deleted from database: " + id);
         } catch (Exception e) {
-            System.err.println("⚠️ Failed to delete database record: " + e.getMessage());
+            System.err.println("⚠Failed to delete database record: " + e.getMessage());
             throw new RuntimeException("Failed to delete database record for file id " + id);
         }
     }
